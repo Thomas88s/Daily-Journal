@@ -1,0 +1,61 @@
+
+/*
+ *   Journal data provider for Daily Journal application
+ *
+ *      Holds the raw data about each entry and exports
+ *      functions that other modules can use to filter
+ *      the entries for different purposes.
+ */
+
+// This is the original data.
+const journal = [
+    {
+        id: 1,
+        date: "01/11/2021",
+        concept: "HTML & CSS",
+        entry: "We started working on Martins Aquarium. Nothing crazy so far."
+        mood: "Happy"
+    },
+    {
+        id: 2,
+        date: "01/12/2021",
+        concept: "Github",
+        entry: "Went over the Github workflow and practiced some ourselves. It's a little convoluted right now but the concept seems simple.",
+        mood: "Happy"
+    },
+    {
+        id: 3,
+        date: "01/13/2021",
+        concept: "Project Creation",
+        entry: "Learned how to input structural shortcuts for html in the terminal. I'll take it if it makes my life easier.",
+        mood: "Alert"
+    },
+    {
+        id: 4,
+        date: "01/14/2021",
+        concept: "Review",
+        entry: "Continued working on the aquarium. Also, we reviewed some concepts we've been working on.",
+        mood: "Alert"
+    },
+    {
+        id: 5,
+        date: "01/15/2021",
+        concept: "Github",
+        entry: "Friday is here again and I feel more confident in my abilites but am no where near feeling like I know what I'm doing.",
+        mood: "Happy"
+    },
+
+    
+]
+
+/*
+    You export a function that provides a version of the
+    raw data in the format that you want
+*/
+export const useJournalEntries = () => {
+    const sortedByDate = journal.sort(
+        (currentEntry, nextEntry) =>
+            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+    )
+    return sortedByDate
+}
