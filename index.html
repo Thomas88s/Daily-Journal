@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <link rel="stylesheet" href="styles/main.css">
     <header>
          <h2>Daily Journal</h2>
     </header>
@@ -17,7 +17,7 @@
     <form action="">
         <fieldset class="date">
             <label for="journalDate">Date of entry</label>
-           <input type="date" name="journalDate" id="journalDate"> 
+           <input type="date" name="journalDate" id="journalDate" > 
         </fieldset>
 
         <br></br>
@@ -31,7 +31,7 @@
 
         <fieldset class="entry">
             <label for="journalEntry">Journal Entry</label>
-            <textarea id="journalEntry" name="journalEntry" rows="2" cols="">
+            <textarea id="journalEntry" name="journalEntry" rows="2" >
             </textarea>
         </fieldset>
 
@@ -52,10 +52,10 @@
         </fieldset>
 
 
-
     </form>
 
-        <br></br>
+        
+        <section class ="journalContainer"></section>
 
     </main>
 
@@ -63,7 +63,7 @@
         <button type="button">Record Journal Entry</button>
         
     </footer>
-    <scripts type="module" src=".scripts/main.js"></scripts>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
 

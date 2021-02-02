@@ -1,19 +1,11 @@
 
-/*
- *   Journal data provider for Daily Journal application
- *
- *      Holds the raw data about each entry and exports
- *      functions that other modules can use to filter
- *      the entries for different purposes.
- */
 
-// This is the original data.
 const journal = [
     {
         id: 1,
         date: "01/11/2021",
         concept: "HTML & CSS",
-        entry: "We started working on Martins Aquarium. Nothing crazy so far."
+        entry: "We started working on Martins Aquarium. Nothing crazy so far.",
         mood: "Happy"
     },
     {
