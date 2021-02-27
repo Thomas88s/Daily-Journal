@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+         <h2>Daily Journal</h2>
+    </header>
+
+   <main>
+    <form action="">
+        <fieldset class="date">
+            <label for="journalDate">Date of entry</label>
+           <input type="date" name="journalDate" id="journalDate" > 
+        </fieldset>
+
+        <br></br>
+
+        <fieldset class="concepts">
+            <label for="conceptsCovered">Concepts Covered</label>
+            <input type="concepts" name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+
+        <br></br>
+
+        <fieldset class="entry">
+            <label for="journalEntry">Journal Entry</label>
+            <textarea id="journalEntry" name="journalEntry" rows="2" >
+            </textarea>
+        </fieldset>
+
+        <br></br>
+
+        <fieldset>
+            <label for="moods">Mood for the day</label>
+            <select type="moods" id="moods">
+                <option value="happy">Happy</option>
+                <option value="serene">Serene</option>
+                <option value="alert">Alert</option>
+                <option value="calm">Calm</option>
+                <option value="nervous">Nervous</option>
+                <option value="stressed">Stressed</option>
+                <option value="bored">Bored</option>
+                <option value="sad">Sad</option>
+            </select>
+        </fieldset>
+
+
+    </form>
+
+        
+    
+</main>
+
+    <footer>
+    <button type="button">Record Journal Entry</button>
+    
+</footer>
+<section class="journalContainer"></section>
+
+<script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
+
